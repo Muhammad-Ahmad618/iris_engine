@@ -10,7 +10,7 @@ export default function CustomSlider() {
     const CustomeSliderContent = [
          
         'https://images7.alphacoders.com/130/1301536.jpg',
-        'https://static0.hardcoregamerimages.com/wordpress/wp-content/uploads/2023/03/tekken815.jpg',
+        'https://img.playstationtrophies.org/images/monthly_2024_01/screenshots/18034/tk8_zafina_battle1_f89beff9-6c30-4b4f-a66f-7c9a5eaa3305.jpg',
         'https://gamingtrend.com/wp-content/uploads/2022/12/law.jpg',
         'https://static.bandainamcoent.eu/high/tekken/tekken-8/02-characters/new-gallery/Screenshots_V1/Panda/Panda-screenshot-2.jpg',
         'https://gamingbolt.com/wp-content/uploads/2024/01/Tekken-8-Reina.jpg'
@@ -41,29 +41,29 @@ export default function CustomSlider() {
 
   return (
 
-        <div className='flex flex-wrap md:flex-nowrap gap-x-5 pt-10 sm:pt-20 pb-0 sm:pb-4'>
+        <div className='flex flex-wrap lg:flex-nowrap gap-x-5 pt-10 sm:pt-20 pb-0 sm:pb-4'>
            
-           <div className='relative'>
+           <div className='relative w-full lg:max-w-[85%]'>
 
-            <div className='max-w-[54rem] w-full'>
-            <img src={CustomeSliderContent[currentIndex]} alt={`Slide ${currentIndex}`} className='rounded-lg'/>
+            <div>
+            <img src={CustomeSliderContent[currentIndex]} alt={`Slide ${currentIndex}`} className='rounded-xl'/>
             </div>
 
-            <button className='bg-[#f6f5f5b2] rounded-full p-2 absolute top-1/2 left-10 hover:bg-white'>
+            <button className='bg-[#f6f5f567] rounded-full p-2 absolute top-1/2 left-5 min-[490px]:left-10 hover:bg-white'>
             <IoIosArrowBack className='text-xs sm:text-sm lg:text-xl '
             onClick={handlePrevClick} />
             </button>
 
-            <button className='bg-[#f6f5f5b2] rounded-full p-2 absolute top-1/2 right-10 hover:bg-white'>
+            <button className='bg-[#f6f5f55a] rounded-full p-2 absolute top-1/2 right-5 min-[490px]:right-10 hover:bg-white'>
             <IoIosArrowForward className='text-xs sm:text-sm lg:text-xl ' 
             onClick={handleNextClick}/>
             </button>
             </div>
 
-            <div className='hidden sm:flex flex-row justify-between pt-5 md:pt-0 md:max-w-[10rem] 2xl:pt-0 md:flex-col gap-y-0 gap-x-4 md:gap-y-2.5'>
+            <div className='hidden sm:flex flex-row justify-between pt-5 lg:pt-0 lg:max-w-[15%] 2xl:pt-0 lg:flex-col gap-y-0 gap-x-4 md:gap-y-2.5'>
            { CustomeSliderContent.map((image, index) => ( 
             
-            <div key={index} className='max-w-[9rem] w-full' onClick={()=>handleThunmNailClick(index)}>
+            <div key={index} className='max-w-[16vw] w-full' onClick={()=>handleThunmNailClick(index)}>
 
                 <img src={image}
                 alt={`Thumbnail ${index}`} 

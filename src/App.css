@@ -5,12 +5,12 @@
 }
 /* Custom styles for Slick Slider dots */
 .slick-dots li button:before {
-  color: white !important;
+  color: rgba(255, 255, 255, 0.737) !important;
   font-size: 9px !important;
 }
 
 .slick-dots li.slick-active button:before {
-  color: rgb(226, 26, 226) !important; /* Ensure active dot is also white */
+  color: rgb(255, 255, 255) !important; /* Ensure active dot is also white */
 }
 
 @media (min-width:670px) {

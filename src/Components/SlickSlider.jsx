@@ -59,12 +59,15 @@ export default function SlickSlider() {
       ];
 
   return (
-    <div className=' text-center py-10 md:py-16'>
+    <div className='text-center py-10 md:py-16'>
+       <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-medium pb-14 text-left">
+            Categories
+      </h2>
     <Slider {...settings}>
      {data.map((category, index) =>
      (
-        <div key={index} className='group relative max-w-[8rem] sm:max-w-[10rem] lg:max-w-[13rem] w-full cursor-pointer overflow-hidden'>
-            <img src={category.image} alt="categoryImage" />
+        <div key={index} className='group relative max-w-[10rem] lg:max-w-[14rem]  w-full cursor-pointer overflow-hidden'>
+            <img src={category.image} alt="categoryImage" className='transition-all duration-150 group-hover:opacity-70 ' />
              <div className='absolute bottom-0 md:bottom-1 bg-black w-full p-3 rounded-b-lg transform translate-y-80 transition-transform duration-500 group-hover:translate-y-0'>
                 <h4 className='text-xs sm:text-sm lg:text-base text-white font-medium'>{category.text}</h4>
              </div>

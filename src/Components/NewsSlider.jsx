@@ -13,6 +13,7 @@ export default function NewsSlider() {
     initialSlide: 0,
 
     responsive: [
+
       {
         breakpoint: 1024,
         settings: {
@@ -74,7 +75,7 @@ export default function NewsSlider() {
         {SliderContent.map((content, index) => (
           <div
             key={index}
-            className="relative hover:scale-[1.03] duration-500 hover:cursor-pointer max-w-[16rem] min-[460px]:max-w-[20rem] min-[600px]:max-w-[16rem] min-[860px]:max-w-[19rem] lg:max-w-[22rem] xl:max-w-[25rem] 2xl:max-w-[30rem] w-full "
+            className="relative hover:scale-[1.03] duration-500 hover:cursor-pointer max-w-[16rem] min-[460px]:max-w-[20rem] min-[600px]:max-w-[16rem] min-[860px]:max-w-[19rem] lg:max-w-[22rem] xl:max-w-[28rem] 2xl:max-w-[34rem] w-full "
           >
             <img src={content.img} alt="News_images" className="rounded-lg"/>
             <div className="absolute bottom-0 backdrop-blur-sm backdrop-brightness-50 min-h-[5rem] min-[860px]:min-h-[7rem] flex items-center w-full justify-center rounded-b-lg ">
