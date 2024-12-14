@@ -7,17 +7,17 @@ import axios from 'axios'
 
 export default function NewGamesSlider() {
 
-  const[game, setGame] = useState([])
+  const[games, setGames] = useState([])
 
   useEffect(() => {
 
     const apikey = 'a82e5a54c5794044a40b36a465e6c265'
-    const url = `https://api.rawg.io/api/games?key=${apikey}&page_size=8`
+    const API_URL = `https://api.rawg.io/api/games?key=${apikey}&dates=2024-01-01,2024-11-30&platforms=4&ordering=-added&page_size=8`
 
-    axios.get(url)
+    axios.get(API_URL)
     .then(response => {
 
-      setGame(response.data.results);
+      setGames(response.data.results);
     })
     .catch(error => {
       console.error("Error fetching data", error);
@@ -64,19 +64,21 @@ export default function NewGamesSlider() {
   return (
     <div>
         <h3 className='text-[1.8rem] text-white font-medium'>Discover Something New</h3>
-        <div className='pt-10 text-center'>
+        <div className='pt-8 text-center'>
         <div className='text-right text-sm text-white cursor-pointer hover:underline pb-4 font-normal'>Show All</div>
         <Slider {...settings}>
-        {game.map(game => (
-          <div className='rounded-xl group max-w-[13rem] cursor-pointer' key={game.id}>
-           <div className='relative w-full h-[16rem]'>
+        {games.map(game => (
+          <div className='rounded-xl group max-w-[15rem] cursor-pointer' key={game.id}>
+           <div className='relative w-full h-[14rem]'>
            <img src={game.background_image} alt={game.name} className='object-cover w-full rounded-lg transition-all duration-150 group-hover:opacity-70 h-full' />
            <IoMdAddCircle className='text-[1.8rem] absolute top-2 right-2 hidden group-hover:block hover:text-[#ffffff]'/>
            </div>
-           <div className='text-white py-3 text-left'>
+           <div className='flex flex-col justify-between text-white py-3 text-left h-[9rem]'>
+          <div className='h-[3rem]'>
            <p className='text-gray-500 font-medium text-sm'>Base Game</p>
-           <h3 className='text-[1.2rem] font-medium'>{game.name}</h3>
-           <h2 className='text-[1.3rem] font-semibold pt-3 text-blue-500'>Free</h2> 
+           <h3 className='text-[1.05rem] font-medium'>{game.name}</h3>
+           </div>
+           <h2 className='text-[1rem] font-semibold pt-3 text-gray-300'>Free</h2> 
            </div>       
           </div>
           ))}
