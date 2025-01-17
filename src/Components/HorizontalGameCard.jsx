@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar, FaStarHalfAlt  } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
+import CartBtn from './Add_to_cart_Btn';
 
 export default function HorizontalGameCard({title, FetchDetailedGames }) {
     const [game, setGames] = useState([]);
@@ -51,6 +52,9 @@ export default function HorizontalGameCard({title, FetchDetailedGames }) {
         <p className='font-medium text-yellow-400'>({game[0].rating})</p>
         </div>
         <p className=''>{game[0].publishers} | {game[0].developers}</p>
+        <div className='flex justify-end w-full'>
+      <CartBtn/>
+      </div>
       </div>
     </div>
     </div> 

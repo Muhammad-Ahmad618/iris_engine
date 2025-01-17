@@ -7,11 +7,11 @@ import SlickSlider from "../Components/SlickSlider";
 import { IoLogoXbox } from "react-icons/io";
 import { FaSteam } from "react-icons/fa";
 import { FaPlaystation } from "react-icons/fa6";
-import { IoCart } from "react-icons/io5";
 import PopularGames from "../Components/popularGames";
 import FreeGameCard from "../Components/FreeGameCard";
 import NewsSlider from "../Components/NewsSlider";
 import Footer from "../Components/Footer";
+import CartBtn from "../Components/Add_to_cart_Btn";
 
 export default function LandingPage() {
   const navigate = useNavigate();
@@ -95,10 +95,7 @@ export default function LandingPage() {
                     </li>
                   </ul>
                 </div>
-                <button className="bg-purple-600 w-[7rem] sm:w-[8rem] py-1.5 text-xs font-medium md:text-sm rounded-sm self-end hover:bg-purple-800 flex items-center justify-evenly">
-                  <IoCart className="text-[1rem] md:text-[1.2rem]" />
-                  Add to Cart
-                </button>
+                <CartBtn/>
               </div>
             </div>
           </div>
