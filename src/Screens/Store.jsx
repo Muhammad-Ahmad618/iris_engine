@@ -6,6 +6,8 @@ import Categories from '../Components/SlickSlider'
 import GameCoverCards from '../Components/GameCoverCards'
 import axios from 'axios'
 import HorizontalGameCard from '../Components/HorizontalGameCard'
+import Footer from '../Components/Footer'
+import UpcommingGames from '../Components/GameBox'
 
 export default function Store() {
 
@@ -71,16 +73,44 @@ export default function Store() {
   return (
     <div className='min-h-screen bg-custom-gradient'>
       <NavBar/>
-      <div className='px-16 py-28'>
+      <div className='px-16 py-28 max-w-screen-[1700px]'>
       <CoverSlider/>
       <div className='px-32 pt-28 space-y-16'>
       <NewGamesSlider/>      
       <Categories/>
-      <GameCoverCards title="Top Speed" FetchGames={fetchGameData} />
-      <HorizontalGameCard  title="Game of the Year" FetchDetailedGames={fetch_Detailed_Game_Date}/>
-      <GameCoverCards title="Trending" FetchGames={fetchGameData}/>
+      <GameCoverCards 
+      title="Top Speed" 
+      FetchGames={fetchGameData} 
+      genere = "racing"
+      specifics="Forza,MotoGP,Need for Speed"
+      />
+      <HorizontalGameCard  
+      title="Game of the Year" 
+      FetchDetailedGames={fetch_Detailed_Game_Date}
+      specifices="Elden Ring shadow of the erd tree"
+      />
+      <GameCoverCards 
+      title="Fantasy" 
+      FetchGames={fetchGameData}
+      genere = "role-playing-games-rpg"
+      specifics="witchers,baldur gate,nioh,Final Fantasy,Dota"
+      />
+      <HorizontalGameCard
+      title="Most Anticipated"
+      FetchDetailedGames={fetch_Detailed_Game_Date}
+      specifices="Final Fantasy VII rebirth"
+      />
+       <GameCoverCards 
+      title="Action" 
+      FetchGames={fetchGameData}
+      genere = "fighting"
+      specifics="street fighter, Guilty gear, street of rage, king of fightersXV"
+      />
+      
+      <UpcommingGames/>
       </div>
       </div>
+      <Footer/>
     </div>
   )
 }

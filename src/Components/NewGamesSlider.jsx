@@ -12,7 +12,7 @@ export default function NewGamesSlider() {
   useEffect(() => {
 
     const apikey = 'a82e5a54c5794044a40b36a465e6c265'
-    const API_URL = `https://api.rawg.io/api/games?key=${apikey}&dates=2024-01-01,2024-11-30&platforms=4&ordering=-added&page_size=8`
+    const API_URL = `https://api.rawg.io/api/games?key=${apikey}&dates=2024-01-01,2025-01-20&platforms=4&ordering=-added&page_size=8&exclude_additions=true`
 
     axios.get(API_URL)
     .then(response => {

@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import { IoMdAddCircle } from "react-icons/io";
 
-export default function GameCover({title, FetchGames}) {
+export default function GameCover({title, FetchGames, genere, specifics}) {
   
   const [games, setGames] = useState([]);
 
   useEffect(()=> {
      
     const FetchData = async() => {
-    const responseData = await FetchGames('racing',4,'2020-01-01,2024-11-30','Forza,MotoGP,Need for Speed')
+    const responseData = await FetchGames(genere,4,'2020-01-01,2025-01-30',specifics)
   
       // Ensure that the response is an array or fallback to an empty array
       if (Array.isArray(responseData)) {
@@ -20,7 +20,7 @@ export default function GameCover({title, FetchGames}) {
       
     FetchData()
 
-  },[FetchGames])
+  },[FetchGames, genere,specifics])
 
   return (
     <div>
