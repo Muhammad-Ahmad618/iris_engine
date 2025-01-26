@@ -38,7 +38,7 @@ export default function StoreCoverSlider() {
 
 
   return (
-    <div className="relative w-full max-w-[75%] mx-auto overflow-hidden rounded-2xl">
+    <div className="relative w-full h-[82vh] mx-auto overflow-hidden rounded-2xl">
       {/* Slider Container */}
       <div
         className="flex transition-transform duration-700 ease-in-out "

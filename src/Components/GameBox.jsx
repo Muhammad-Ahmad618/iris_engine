@@ -23,7 +23,7 @@ export default function GameBox() {
 
   return (
     <div>
-     <div className='text-center py-10'>
+     <div className='text-center pt-10 pb-20'>
       <h3 className='text-[2rem] text-white font-medium'>Upcomming Games of 2025</h3>
     </div>
 
@@ -35,12 +35,11 @@ export default function GameBox() {
          <img src={game.thumbnail} alt={game.heading} className='object-cover w-full h-full rounded-t-[20px]' />       
        </div>
 
-       <div className='space-y-3 p-4 text-white bg-custom'>
+       <div className='space-y-3 p-4 text-white bg-[#121212c7] rounded-b-[20px]'>
           <h1 className='font-medium text-[1.3rem]'>{game.heading}</h1>
-          <p className='line-clamp-3 text-sm'>{game.body}</p>
-          <p>Relase Date: {game.ReleaseDate}</p> 
+          <p className='line-clamp-3 text-sm leading-6'>{game.body}</p>
+          <p className='text-sm font-semibold text-[#ca2dbd]'>Relase Date: {game.ReleaseDate}</p> 
           <div>
-
           </div>
        </div>
       </div>

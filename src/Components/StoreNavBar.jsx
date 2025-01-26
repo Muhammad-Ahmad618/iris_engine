@@ -71,12 +71,12 @@ export default function StoreNavBar() {
   return (
     <div className="bg-black shadow-sm shadow-black p-4 flex items-center justify-between fixed w-full z-10">
       <LuMenu 
-        className="text-white text-[1.7rem] hover:text-[#c945ce] cursor-pointer" 
+        className="text-white text-[1.7rem] hover:text-purple-600 cursor-pointer" 
         onClick={toggleSideMenu} 
       />
 
       <div className="px-10 flex items-center justify-between w-full">
-        <div className="text-white flex items-center gap-x-2 hover:text-[#c945ce] ease-in-out duration-150 cursor-pointer">
+        <div className="text-white flex items-center gap-x-2 hover:text-purple-600 ease-in-out duration-150 cursor-pointer">
           <GiBeastEye className="text-[2rem] sm:text-[2.5rem]" />
           <h3 className="text-[1.2rem] sm:text-[1.3rem] font-medium">
             Engine
@@ -96,7 +96,7 @@ export default function StoreNavBar() {
         <div className="flex items-center gap-x-8 relative">
           <div ref={notificationButtonRef}>
             <BsBellFill 
-              className="text-[1.4rem] text-white hover:text-[#c945ce] cursor-pointer" 
+              className="text-[1.4rem] text-white hover:text-purple-600 cursor-pointer" 
               onClick={toggleNotifications}
             /> 
           </div>
@@ -121,7 +121,7 @@ export default function StoreNavBar() {
           
           <div ref={userIconRef}>
           <FaUserCircle 
-            className="text-[1.8rem] text-white hover:text-[#c945ce] cursor-pointer" 
+            className="text-[1.8rem] text-white hover:text-purple-600 cursor-pointer" 
             onClick={toggleUserMenu}
           />
           </div>

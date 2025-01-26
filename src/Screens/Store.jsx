@@ -73,9 +73,9 @@ export default function Store() {
   return (
     <div className='min-h-screen bg-custom-gradient'>
       <NavBar/>
-      <div className='px-16 py-28 max-w-screen-[1700px]'>
+      <div className='py-28 max-w-screen-llg px-14 mx-auto'>
       <CoverSlider/>
-      <div className='px-32 pt-28 space-y-16'>
+      <div className='pt-28 space-y-16 mx-auto'>
       <NewGamesSlider/>      
       <Categories/>
       <GameCoverCards 
