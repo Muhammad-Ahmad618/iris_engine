@@ -3,18 +3,10 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Category from '../Components/SlickSlider'
 import Avatar from "../Assets/avatar.png";
-import CustomSlider from "../Components/CustomSlider";
-import { IoLogoXbox } from "react-icons/io";
-import { FaSteam } from "react-icons/fa";
-import { FaPlaystation } from "react-icons/fa6";
 import PopularGames from "../Components/popularGames";
-import FreeGameCard from "../Components/FreeGameCard";
-import NewsSlider from "../Components/NewsSlider";
 import Footer from "../Components/Footer";
-import CartBtn from "../Components/Add_to_cart_Btn";
 import { FaMoneyBill,FaDownload,FaTrophy  } from "react-icons/fa6";
 import { MdAccessAlarm } from "react-icons/md";
-
 
 
 
@@ -87,57 +79,6 @@ export default function LandingPage() {
           </div>
         </div>
 
-        {/* <div className=" flex flex-col items-center sm:max-w-[90%] w-full  m-auto py-6 min-[460px]:py-10 md:py-16">
-          <h1 className=" text-[1.2rem] sm:text-[1.6rem] md:text-[2.3rem] text-center text-white font-medium ">
-            Most Anticipated
-          </h1>
-
-          <CustomSlider />
-
-          <div className="bg-custom-black-80 mx-20 rounded-md text-white flex p-3 gap-x-6 w-full">
-            <div className="hidden sm:block">
-              <img
-                src="https://images7.alphacoders.com/130/1301536.jpg"
-                alt="Tekken 8"
-                className="hidden sm:block sm:max-w-[16rem] h-full md:max-w-[19rem] rounded-e-md object-fit"
-              />
-            </div>
-            <div className=" space-y-2 md:space-y-6  w-full">
-              <h4 className="text-xs md:text-sm lg:text-base font-medium line-clamp-2 md:line-clamp-1">
-                Get ready for the next chapter in the legendary fighting game
-                franchise,TEKKEN 8
-              </h4>
-              <div className="flex gap-x-5 text-[0.6rem] md:text-[0.7rem] lg:text-sm">
-                <p>Release Date:</p>
-                <p className="text-[#43d60d] font-medium">26 January 2024</p>
-              </div>
-              <div className="flex gap-x-5 text-[0.6rem] md:text-[0.7rem] lg:text-sm">
-                <p>Developers:</p>
-                <p>Bandai Namco Studios.Inc</p>
-              </div>
-              <div className="flex justify-between flex-wrap gap-x-20 gap-y-5 text-sm lg:text-base">
-                <div className="flex gap-x-5 ">
-                  <p className="text-[0.6rem] md:text-[0.7rem] lg:text-sm">
-                    Platform:
-                  </p>
-                  <ul className="text-white flex gap-x-5 text-[1rem] md:text-[1.2rem]">
-                    <li>
-                      <IoLogoXbox />
-                    </li>
-                    <li>
-                      <FaSteam />
-                    </li>
-                    <li>
-                      <FaPlaystation />
-                    </li>
-                  </ul>
-                </div>
-                <CartBtn/>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
         <div className="text-center pt-36">
           <div className="pb-10 ">
           <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[2.5rem] font-medium ">
@@ -152,18 +93,15 @@ export default function LandingPage() {
         <Category/>
         </div>
 
-       <div className="h-[70vh]">
-
-        <div>
-         
-          
+       <div className="h-[65vh] rounded-xl bg-[url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/7u0o3i84kn2M0zywawe5fA/1418252c9f25b687b9054e8dc8683e66/Ubidotcom-FullBleed_Ubisoft__AC-Shadows_Dec24_1920x680_desk_no-logo.jpg')] object-cover bg-no-repeat w-full bg-right">
+       <div className=" flex w-full h-full items-center px-24">
+        <div className="text-white max-w-[30rem] w-full">
+         <h1 className="text-[2.1rem] font-bold">Assassin's Creed Shadow</h1>
+         <h4 className="text-[1.2rem] text-purple-600 font-semibold py-3">Pre-Order Now and Save Big !</h4>
+         <p className="leading-6">Secure your copy today and enjoy an exclusive discount. Be the first to experience the thrill!</p>   
+         <button className="py-2 border-2 border-purple-600 transition-all duration-500 ease-in-out rounded-full w-[10rem] font-semibold hover:bg-purple-600 mt-8">Pre-Order Now</button>
+        </div>   
         </div>
-
-        <div>
-          
-          
-        </div>    
-      
       </div>  
 
      {/* Why Choose Us */}
@@ -192,10 +130,10 @@ export default function LandingPage() {
  
  {/* News Section */}
         <div>
-          <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-medium">
-            News
+          <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-semibold">
+           Latest News
           </h2>
-          <NewsSlider />
+         
         </div>
 
         <div className=" flex items-center justify-around text-white space-y-7 md:space-y-10 bg-custom-black-80 rounded-xl my-20">
@@ -211,10 +149,10 @@ export default function LandingPage() {
           <input
             type="email"
             name="email"
-            className="p-2 sm:p-3 rounded-3xl text-purple-800 text-[0.7rem] min-[460px]:text-xs sm:text-sm lg:text-base w-full max-w-[30rem] mr-5"
+            className="py-2 px-4 sm:py-3 sm:px-6 rounded-3xl text-purple-800 text-[0.7rem] min-[460px]:text-xs sm:text-sm lg:text-base w-full max-w-[30rem] mr-5"
             placeholder="Email Address"
           />
-          <button className="bg-white text-purple-800 py-2 sm:py-3 px-4 sm:px-6 md:px-9 rounded-3xl font-medium text-[0.7rem] min-[460px]:text-xs sm:text-sm lg:text-base  w-auto hover:bg-black hover:text-white">
+          <button className="bg-white text-purple-800 py-2 sm:py-3 px-4 transition-all duration-500 ease-in-out sm:px-6 md:px-9 rounded-3xl font-medium text-[0.7rem] min-[460px]:text-xs sm:text-sm lg:text-base  w-auto hover:bg-purple-600 hover:text-white">
             Subscribe
           </button>
           </div>
@@ -223,7 +161,6 @@ export default function LandingPage() {
           <img src="/Spiderman2.png" alt="spiderman" className="w-full h-full object-cover"/>
           </div>
         </div>
-
       </div>
       <Footer />
     </div>
