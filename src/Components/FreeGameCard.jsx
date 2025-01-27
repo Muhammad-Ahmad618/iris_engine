@@ -48,7 +48,7 @@ export default function FreeGameCard() {
             </div>
 
             <div className="flex justify-between items-center sm:py-2 ">
-              <h3 className="font-medium text-[0.7rem] min-[460px]:text-xs md:text-[1rem] text-cyan-300">Free to Play</h3>
+              <h3 className="font-medium text-[0.7rem] min-[460px]:text-xs md:text-[1rem] text-purple-500">Free to Play</h3>
               <MdWindow className="text-[1.1rem] md:text-[1.3rem]" />
             </div>
           </div>

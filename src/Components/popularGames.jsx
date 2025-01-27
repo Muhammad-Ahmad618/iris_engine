@@ -44,10 +44,10 @@ export default function popularGames() {
             <h1 className="font-medium text-[0.8rem] md:text-base">{images.title}</h1>
             <p className="font-medium  text-sm md:text-sm lg:text-base">
               <span className="line-through text-gray-400 pr-5">$79.99</span>
-              <span className="text-cyan-400">$49.99</span>
+              <span className="text-[#43d60d]">$49.99</span>
             </p>
             </div>
-            <IoMdAddCircleOutline className="text-2xl hover:text-cyan-400"/>
+            <IoMdAddCircleOutline className="text-2xl hover:text-[#43d60d]"/>
           </div>
           
         </div>

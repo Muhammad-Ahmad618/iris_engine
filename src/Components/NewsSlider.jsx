@@ -53,11 +53,11 @@ export default function NewsSlider() {
     },
     {
       img: require("../Assets/News Images/image 6.png"),
-      description: `Call of Duty Fails to Halt November's Decline in Video Game Sales`,
+      description: `Marvel's Spider-Man 2 Developer Delays New Game+ Update`,
     },
     {
       img: require("../Assets/News Images/image 7.png"),
-      description: `Marvel's Spider-Man 2 Developer Delays New Game+ Update`,
+      description: `Call of Duty Fails to Halt November's Decline in Video Game Sales`,
     },
     {
       img: require("../Assets/News Images/image 8.png"),

@@ -56,7 +56,7 @@ export default function Footer() {
            
            {LinkSection.map((section, index) => (
             <div className='space-y-7' key={index}>
-                <h4 className=' text-base md:text-[1.2rem] lg:text-[1.4rem] font-bold bg-custom-gradient2 bg-clip-text text-transparent'>{section.heading}</h4>
+                <h4 className=' text-base md:text-[1.2rem] lg:text-[1.4rem] font-bold bg-custom-gradient3 bg-clip-text text-transparent'>{section.heading}</h4>
                 {section.links.map((link, linkIndex) => (
                 <ul className=' space-y-5 lg:space-y-6 text-[0.7rem] lg:text-sm text-gray-300' key={linkIndex}>
                     <li><a href='/' className='flex items-center hover:text-purple-500'><IoChevronForward/> {link}</a></li>
