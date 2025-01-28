@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Category from '../Components/SlickSlider'
+import News from '../Components/VideoGamesNews'
 import Avatar from "../Assets/avatar.png";
 import PopularGames from "../Components/popularGames";
 import Footer from "../Components/Footer";
@@ -133,9 +134,12 @@ export default function LandingPage() {
           <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-semibold">
            Latest News
           </h2>
-         
+           
+           <News/>
         </div>
 
+
+{/* NewsLetter Section */}
         <div className=" flex items-center justify-around text-white space-y-7 md:space-y-10 bg-custom-black-80 rounded-xl my-20">
            
           <div className="space-y-7"> 
