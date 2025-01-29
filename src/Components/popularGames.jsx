@@ -32,17 +32,17 @@ export default function popularGames() {
   ];
 
   return (
-    <div className="py-14 flex flex-wrap justify-evenly gap-x-5 gap-y-10">
+    <div className="py-14 grid grid-cols-[minmax(20rem_27rem)] justify-center sm:grid-cols-[1fr_1fr] min-[1270px]:grid-cols-[1fr_1fr_1fr] justify-items-center gap-x-10 gap-y-10">
       {GamesImage.map((images, index) => (
         <div
           key={index}
-          className="flex flex-col flex-wrap text-white max-w-[22rem] min-[565px]:max-w-[14rem] sm:max-w-[16rem] md:max-w-[18rem] lg:max-w-[22rem] 2xl:max-w-[25rem] min-[1910px]:max-w-[30rem] cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          className="flex flex-col flex-wrap text-white w-full  cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <img src={images.url} alt="Games_Image" className="rounded-t-lg" />
-          <div className="px-2 sm:px-5 py-2 md:py-3 bg-custom-black-80 rounded-b-lg flex justify-between">
-            <div className="space-y-2 sm:space-y-3">
-            <h1 className="font-medium text-[0.8rem] md:text-base">{images.title}</h1>
-            <p className="font-medium  text-sm md:text-sm lg:text-base">
+          <div className="px-2 sm:px-5 py-2 md:py-3 bg-custom-black-80 rounded-b-lg flex justify-between h-auto">
+            <div className="space-y-2 sm:space-y-3 text-start">
+            <h1 className="font-medium text-base ">{images.title}</h1>
+            <p className="font-medium  text-sm lg:text-base">
               <span className="line-through text-gray-400 pr-5">$79.99</span>
               <span className="text-[#43d60d]">$49.99</span>
             </p>

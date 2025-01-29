@@ -60,7 +60,7 @@ export default function SlickSlider() {
 
   return (
     <div className='text-center py-10 md:py-16'>
-       <h2 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-semibold pb-14 text-left">
+       <h2 className="text-white text-[1.8rem] font-semibold pb-14 text-left">
             Categories
       </h2>
     <Slider {...settings}>

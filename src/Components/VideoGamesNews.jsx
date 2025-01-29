@@ -28,10 +28,10 @@ export default function VideoGamesNews() {
     },[apiKey, query])
 
   return (
-    <div className='flex gap-x-10 py-10'>
+    <div className='flex flex-col xl:flex-row gap-x-10 py-10 gap-y-10'>
 
         {news[0] && (
-        <div className='max-w-[65%] w-full '>  
+        <div className='xl:max-w-[65%] w-full '>  
           <div >
             
             <img src={news[0].urlToImage} alt={news[0].title} className='rounded-xl' />
@@ -46,16 +46,16 @@ export default function VideoGamesNews() {
         </div>
         )}
 
-        <div className='max-w-[35%] w-full space-y-5'>
+        <div className='grid grid-cols-1 md:grid-cols-[1fr_1fr] xl:grid-cols-1 xl:max-w-[35%] w-full gap-5'>
         
        {news.slice(1).map((article, index) => ( 
-        <div key={index} className='flex flex-row-reverse h-[7rem] w-full gap-x-3 bg-[#32313156] rounded-xl'>
+        <div key={index} className='flex flex-row-reverse h-[10rem] md:h-[7rem] w-full gap-x-3 bg-[#32313156] rounded-xl'>
          
          <div className='max-w-[45%] w-full h-full'>
          <img src={article.urlToImage} alt={article.title} className='w-full object-cover h-full rounded-xl '/>
          </div>
          <div className='text-white max-w-[55%] w-full p-3'>
-            <h1 >{article.title}</h1>
+            <h1 className='md:line-clamp-3'>{article.title}</h1>
          </div>
         </div>
      ))}
