@@ -30,18 +30,18 @@ export default function HorizontalGameCard({title, FetchDetailedGames, specifice
   return (
     <div className='group'>
     <h3 className='text-[1.8rem] text-white font-medium pb-8'>{title}</h3>
-    <div className='flex gap-x-4 w-full bg-[#12121279] rounded-md text-white h-[17rem]'>
+    <div className='flex gap-x-4 w-full bg-[#2e2e2e88] rounded-md text-white h-[16.7rem]'>
       
       {/* Game Image Container */}
 
-      <div className='max-w-[40%] w-full cursor-pointer relative'>
-      <IoMdAddCircle className='text-[1.8rem] absolute top-2 right-2 z-10 hidden group-hover:block hover:text-[#d946f0]'/>
-          <img src={game[0].background_image} alt={game[0].name} className='rounded-md w-full object-cover group-hover:opacity-80 transition-all duration-300' />
+      <div className='max-w-[40%] w-full cursor-pointer relative h-full'>
+      <IoMdAddCircle className='text-[1.8rem] absolute top-2 right-2 z-10 hidden group-hover:block hover:text-black'/>
+          <img src={game[0].background_image} alt={game[0].name} className='rounded-md w-full h-full object-cover group-hover:opacity-80 transition-all duration-300' />
       </div>
       
       {/* Game Detail Container */}
 
-      <div className='p-4 space-y-2 max-w-[60%] w-full'>
+      <div className='p-4 space-y-2 max-w-[60%] w-full h-full'>
         <h1 className='text-[2rem] font-medium cursor-pointer'
         style={{ textShadow: '1px 1px 2px black' }}>{game[0].name}</h1>
         <p className='text-sm text-[#35f462] font-medium'>Release Date : {game[0].released}</p>

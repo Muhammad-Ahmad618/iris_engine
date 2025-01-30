@@ -71,7 +71,7 @@ export default function Store() {
   }
 
   return (
-    <div className='min-h-screen bg-custom-gradient'>
+    <div className='min-h-screen bg-[#121212]'>
       <NavBar/>
       <div className='py-28 max-w-screen-llg px-14 mx-auto'>
       <CoverSlider/>

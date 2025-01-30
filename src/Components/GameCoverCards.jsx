@@ -26,7 +26,11 @@ export default function GameCover({title, FetchGames, genere, specifics}) {
     <div>
         <h3 className="text-white text-[1.1rem] sm:text-[1.4rem] md:text-[1.8rem] font-medium">{title}</h3>  
       <div className='pt-8 text-center'>
-        <div className='text-right text-sm text-white cursor-pointer hover:underline pb-4 font-normal'>Show All</div>
+        <div className='text-right text-sm text-white pb-6 font-normal'>
+          
+          <button className="py-2 text-white w-[6rem] rounded-full bg-[#202020a0] font-semibold hover:bg-black" >Show All</button>
+          
+          </div>
         <div className='flex justify-between'>
         {games.map(game => (
           <div className='rounded-xl group max-w-[15rem] cursor-pointer' key={game.id}>

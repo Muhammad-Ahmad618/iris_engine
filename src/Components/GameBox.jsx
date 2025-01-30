@@ -25,17 +25,18 @@ export default function GameBox() {
     <div>
      <div className='text-center pt-10 pb-20'>
       <h3 className='text-[2rem] text-white font-medium'>Upcomming Games of 2025</h3>
+      <div className="bg-custom-gradient2 h-1 max-w-[26rem] w-full mx-auto rounded-full mt-2"></div>
     </div>
 
  <div className='flex justify-between'>
   {Games2025.map((game,index) =>(
-      <div key={index} className='max-w-[35rem] w-full'>
+      <div key={index} className='max-w-[35rem] w-full group cursor-pointer '>
        
        <div>
-         <img src={game.thumbnail} alt={game.heading} className='object-cover w-full h-full rounded-t-[20px]' />       
+         <img src={game.thumbnail} alt={game.heading} className='object-cover w-full h-full rounded-t-[20px] transition-all duration-500 group-hover:opacity-55' />       
        </div>
 
-       <div className='space-y-3 p-4 text-white bg-[#121212c7] rounded-b-[20px]'>
+       <div className='space-y-3 p-4 text-white bg-[#2e2e2e88] rounded-b-[20px]'>
           <h1 className='font-medium text-[1.3rem]'>{game.heading}</h1>
           <p className='line-clamp-3 text-sm leading-6'>{game.body}</p>
           <p className='text-sm font-semibold text-[#ca2dbd]'>Relase Date: {game.ReleaseDate}</p> 
