@@ -8,6 +8,7 @@ import axios from 'axios'
 import HorizontalGameCard from '../Components/HorizontalGameCard'
 import Footer from '../Components/Footer'
 import UpcommingGames from '../Components/GameBox'
+import CartProvider from '../CartContext/CartContext'
 
 export default function Store() {
 
@@ -71,6 +72,7 @@ export default function Store() {
   }
 
   return (
+    <CartProvider>
     <div className='min-h-screen bg-[#121212]'>
       <NavBar/>
       <div className='py-28 max-w-screen-llg px-14 mx-auto'>
@@ -112,5 +114,6 @@ export default function Store() {
       </div>
       <Footer/>
     </div>
+    </CartProvider>
   )
 }

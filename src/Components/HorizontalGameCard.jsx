@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState} from 'react';
 import { FaStar, FaStarHalfAlt  } from "react-icons/fa";
 import { IoMdAddCircle } from "react-icons/io";
 import CartBtn from './Add_to_cart_Btn';
 
 export default function HorizontalGameCard({title, FetchDetailedGames, specifices }) {
     const [game, setGames] = useState([]);
-
+     
     useEffect(()=> {
        
       const FetchData = async() => {

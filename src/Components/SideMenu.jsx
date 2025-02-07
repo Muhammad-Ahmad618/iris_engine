@@ -15,7 +15,7 @@ export default function SideMenu({SideMenu}) {
     { icon: <IoStorefront />, label: "Store"},
     { icon: <TiNews/>, label: "News" },
     { icon: <BiSolidCategory/>, label: "Category" },
-    { icon: <FaCartShopping />, label: "Cart" },
+    { icon: <FaCartShopping />, label: "Cart"},
     { icon: <IoMdAddCircle />, label: "WishList" },
     { icon: <IoLibrarySharp />, label: "My Library" },
     { icon: <IoWallet />, label: "Wallet" },
