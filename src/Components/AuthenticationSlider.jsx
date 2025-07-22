@@ -2,6 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import slide1 from "../Assets/AutoSliderContent/slide1.png";
+import slide2 from "../Assets/AutoSliderContent/slide2.png";
+import slide3 from "../Assets/AutoSliderContent/slide3.png";
+import slide4 from "../Assets/AutoSliderContent/slide4.png";
+import slide5 from "../Assets/AutoSliderContent/slide5.png";
+import slide6 from "../Assets/AutoSliderContent/slide6.png";
+import slide7 from "../Assets/AutoSliderContent/slide7.png";
+
 
 export default function AuthenticationSlider() {
   const sliderRef = useRef(null); // Ref for the Slider component
@@ -19,15 +27,15 @@ export default function AuthenticationSlider() {
   };
 
   const slideImages = [
-    require("../Assets/AutoSliderContent/slide1.png"),
-    require("../Assets/AutoSliderContent/slide2.png"),
-    require("../Assets/AutoSliderContent/slide3.png"),
-    require("../Assets/AutoSliderContent/slide4.png"),
-    require("../Assets/AutoSliderContent/slide5.png"),
-    require("../Assets/AutoSliderContent/slide6.png"),
-    require("../Assets/AutoSliderContent/slide7.png"),
+    slide1,
+    slide2,
+    slide3,
+    slide4,
+    slide5,
+    slide6,
+    slide7,
   ];
-
+  
   useEffect(() => {
     if (sliderRef.current) {
       // Force re-initialization of the Slick slider

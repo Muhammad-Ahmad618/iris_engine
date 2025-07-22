@@ -2,6 +2,18 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import survivalImg from "../Assets/Slider2/Survival.png";
+import horrorImg from "../Assets/Slider2/Horror.png";
+import actionImg from "../Assets/Slider2/Action.png";
+import sportsImg from "../Assets/Slider2/Sports.png";
+import adventureImg from "../Assets/Slider2/Adventure.png";
+import simulationImg from "../Assets/Slider2/Simulation.png";
+import openWorldImg from "../Assets/Slider2/Open World.png";
+import racingImg from "../Assets/Slider2/Racing.png";
+import coopImg from "../Assets/Slider2/Cooperative.png";
+import strategyImg from "../Assets/Slider2/Strategy.png";
+import storyRichImg from "../Assets/Slider2/Story Rich.png";
+import rpgImg from "../Assets/Slider2/Role Playing.png";
 
 
 export default function SlickSlider() {
@@ -43,20 +55,21 @@ export default function SlickSlider() {
         ]
       };
 
-    const data = [
-        { image: require("../Assets/Slider2/Survival.png"), text: "SURVIVAL" },
-        { image: require("../Assets/Slider2/Horror.png"), text: "HORROR" },
-        { image: require("../Assets/Slider2/Action.png"), text: "ACTION" },
-        { image: require("../Assets/Slider2/Sports.png"), text: "SPORTS" },
-        { image: require("../Assets/Slider2/Adventure.png"), text: "ADVENTURE" },
-        { image: require("../Assets/Slider2/Simulation.png"), text: "SIMULATION" },
-        { image: require("../Assets/Slider2/Open World.png"), text: "OPEN-WORLD" },
-        { image: require("../Assets/Slider2/Racing.png"), text: "RACING" },
-        { image: require("../Assets/Slider2/Cooperative.png"), text: "COOPERATIVE" },
-        { image: require("../Assets/Slider2/Strategy.png"), text: "STRATEGY" },
-        { image: require("../Assets/Slider2/Story Rich.png"), text: "STORY RICH" },
-        { image: require("../Assets/Slider2/Role Playing.png"), text: "ROLE PLAYING" },
+      const data = [
+        { image: survivalImg, text: "SURVIVAL" },
+        { image: horrorImg, text: "HORROR" },
+        { image: actionImg, text: "ACTION" },
+        { image: sportsImg, text: "SPORTS" },
+        { image: adventureImg, text: "ADVENTURE" },
+        { image: simulationImg, text: "SIMULATION" },
+        { image: openWorldImg, text: "OPEN-WORLD" },
+        { image: racingImg, text: "RACING" },
+        { image: coopImg, text: "COOPERATIVE" },
+        { image: strategyImg, text: "STRATEGY" },
+        { image: storyRichImg, text: "STORY RICH" },
+        { image: rpgImg, text: "ROLE PLAYING" },
       ];
+      
 
   return (
     <div className='text-center py-10 md:py-16'>
