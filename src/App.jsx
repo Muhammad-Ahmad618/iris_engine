@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import LandingPage from './Screens/LandingPage/LandingPage';
-import SignIn from './Screens/SignIn';
+import SignIn from './Screens/LoginPage/SignIn';
 import Register from './Screens/LoginPage/SignIn';
 import Store from './Screens/StorePage/Store';
 import GameDetail from './Components/Interface/GameDetails_Interface'
