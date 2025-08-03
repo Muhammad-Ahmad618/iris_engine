@@ -1,14 +1,14 @@
 import React from 'react'
-import NavBar from '../Components/StoreNavBar'
-import CoverSlider from '../Components/StoreCoverSlider'
-import NewGamesSlider from '../Components/NewGamesSlider'
-import Categories from '../Components/SlickSlider'
-import GameCoverCards from '../Components/GameCoverCards'
+import NavBar from '../../Components/StoreNavBar'
+import CoverSlider from '../../Components/StoreCoverSlider'
+import NewGamesSlider from '../../Components/NewGamesSlider'
+import Categories from '../../Components/CategoriesSlider'
+import GameCoverCards from '../../Components/GameCoverCards'
 import axios from 'axios'
-import HorizontalGameCard from '../Components/HorizontalGameCard'
-import Footer from '../Components/Footer'
-import UpcommingGames from '../Components/GameBox'
-import CartProvider from '../CartContext/CartContext'
+import HorizontalGameCard from '../../Components/HorizontalGameCard'
+import Footer from '../../Components/Footer'
+import UpcommingGames from '../../Components/GameBox'
+import CartProvider from '../../CartContext/CartContext'
 
 export default function Store() {
 

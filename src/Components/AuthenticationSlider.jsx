@@ -2,13 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide1 from "../Assets/AutoSliderContent/slide1.png";
-import slide2 from "../Assets/AutoSliderContent/slide2.png";
-import slide3 from "../Assets/AutoSliderContent/slide3.png";
-import slide4 from "../Assets/AutoSliderContent/slide4.png";
-import slide5 from "../Assets/AutoSliderContent/slide5.png";
-import slide6 from "../Assets/AutoSliderContent/slide6.png";
-import slide7 from "../Assets/AutoSliderContent/slide7.png";
+import slide1 from "../Assets/AutoSliderContent/slide1.webp";
+import slide2 from "../Assets/AutoSliderContent/slide2.webp";
+import slide3 from "../Assets/AutoSliderContent/slide3.webp";
+import slide4 from "../Assets/AutoSliderContent/slide4.webp";
+import slide5 from "../Assets/AutoSliderContent/slide5.webp";
+import slide6 from "../Assets/AutoSliderContent/slide6.webp";
+import slide7 from "../Assets/AutoSliderContent/slide7.webp";
 
 
 export default function AuthenticationSlider() {
@@ -21,7 +21,7 @@ export default function AuthenticationSlider() {
     slidesToScroll: 1,
     autoplay: true,
     speed: 1500,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     cssEase: "ease-in-out",
     arrows: false,
   };

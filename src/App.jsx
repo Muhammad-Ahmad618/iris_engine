@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import LandingPage from './Screens/LandingPage';
+import LandingPage from './Screens/LandingPage/LandingPage';
 import SignIn from './Screens/SignIn';
 import Register from './Screens/SignIn'
 import Store from './Screens/Store';

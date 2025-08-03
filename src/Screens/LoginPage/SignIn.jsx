@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { GiBeastEye } from "react-icons/gi";
-import VortexButton from "../Components/VortexButton";
+import VortexButton from "../../Components/VortexButton";
 import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoXbox } from "react-icons/io";
 import { FaSteam } from "react-icons/fa";
 import HashLoader from "react-spinners/HashLoader";
-import AuthenticationSlider from "../Components/AuthenticationSlider";
+import AuthenticationSlider from "../../Components/AuthenticationSlider";
 
 export default function SignIn({ heading }) {
   const navigate = useNavigate();

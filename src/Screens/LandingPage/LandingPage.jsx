@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../Components/Navbar";
-import Category from "../Components/SlickSlider";
-import News from "../Components/VideoGamesNews";
-import Avatar from "../Assets/avatar.png";
-import PopularGames from "../Components/popularGames";
-import Footer from "../Components/Footer";
+import Navbar from "../../Components/Navbar";
+import Category from "../../Components/CategoriesSlider";
+import News from "../../Components/VideoGamesNews";
+import Avatar from "../../Assets/avatar.png";
+import PopularGames from "../../Components/popularGames";
+import Footer from "../../Components/Footer";
 import { FaMoneyBill, FaDownload, FaTrophy } from "react-icons/fa6";
 import { MdAccessAlarm } from "react-icons/md";
 
@@ -13,7 +13,7 @@ export default function LandingPage() {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    navigate("/SignIn");
+    navigate("/SignIn");vatar
   };
 
   const SellingPoints = [
@@ -176,7 +176,7 @@ export default function LandingPage() {
 
           <div className="hidden lg:block max-w-[22rem] w-full">
             <img
-              src="/Spiderman2.png"
+              src="/Spiderman2.webp"
               alt="spiderman"
               className="w-full h-full object-cover"
             />
